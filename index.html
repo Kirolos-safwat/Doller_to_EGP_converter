@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Dollars to Egyptian Pounds</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body class="h-[100vh] flex items-center justify-center flex-col box-border">
+    <div
+      class="container w-full m-auto flex items-center justify-center flex-col"
+    >
+      <h1
+        class="text-center text-xl sm:text-xl md:text-3xl lg:text-4xl bold text-base/6 p-5"
+      >
+        Convert Dollers To GEP
+      </h1>
+      <form
+        class="flex items-center justify-center p-2 flex-col w-[90%] md:w-[75%] gap-5"
+        onsubmit="dollToEGb()"
+        action=""
+      >
+        <input
+          id="input"
+          class="placeholder:text-black placeholder:bold placeholder:text-lg rounded-full bg-blue-100 w-full text-center p-2 default:outline-2 enabled:hover:border-gray-400 disabled:opacity-75 checked:bg-blue-500"
+          placeholder="Enter Amount Of Dollers"
+          type="number"
+        />
+        <input
+          class="p-2 rounded-full w-full bg-blue-500 text-white"
+          type="submit"
+          value="Convert"
+          
+        />
+      </form>
+      <p
+      id="result"
+        class=""
+      ></p>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
